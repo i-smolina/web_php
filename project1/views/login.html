@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+        <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    </head>
+
+    <body>
+        <div class="body">
+            <div class="container">
+                 <? include 'header.html'; ?>
+                <div class="cblock">
+                    <div class="padding auth">
+                        <table class="layout">
+                            <tbody>
+                                <tr>
+                                    <td class="left-block">
+                                    <p>
+                                        <strong>Впервые на сайте?</strong>
+                                        Если Вы не зарегистрированы в нашем магазине, потратьте 5 минут и
+                                        <a href="../controllers/register.php">зарегистрируйтесь</a>.
+                                    </p></td>
+                                    <td class="middle-block"><h2>Войти</h2>
+                                    <div class="autorization">
+                                        <p>
+                                            Если Вы уже зарегистрированы в нашем магазине, Вам необходимо авторизоваться.
+                                        </p>
+                                        <form method="post" action="" class="loginform">
+                                            <? if ($is_fail) {
+                                            ?>
+                                            <div>
+                                                <span class="error_message">Введён неверный пароль или электронная почта</span>
+                                            </div>
+                                            <? } ?>
+                                            <input type="text" name="login" value="Логин" class="login"/>
+                                            <input type="password" name="password" class="login" />
+                                            <div class="remember">
+                                                <a href="" >Напомнить пароль</a>
+                                            </div>
+                                            <input type="submit" name="doLogin" value="Войти"/>
+                                        </form>
+                                    </div></td>
+                                    <td class="right-block"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </body>
+</html>

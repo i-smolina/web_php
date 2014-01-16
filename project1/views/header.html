@@ -1,0 +1,21 @@
+<div class="header">
+    <img src="../img/finti1.jpg" class="logo"/>
+    <div class="caption">
+        <h1 class="caption">Финтифлюшки</h1>
+    </div>
+    <div class="welcome">
+        <p>
+            Добро пожаловать<? if (isset($_SESSION['user'])) {  
+               echo ", <a href='../controllers/account.php'>".$_SESSION['user']."</a>!<br>";
+               echo "( <a href='../controllers/login.php?action=logout'>Выход</a> )";
+             } 
+             else echo "!"; ?>
+        </p>
+        <? if (!isset($_SESSION['user'])) {
+        ?>
+        <p>
+            Вы можете <a href="../controllers/login.php">войти</a> или <a href="../controllers/register.php">зарегистрироваться</a>
+        </p>
+        <? } ?>
+    </div>
+</div>

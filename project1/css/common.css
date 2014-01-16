@@ -1,0 +1,89 @@
+
+div.form {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+table.form {
+	position: relative;
+	width: 100%;
+}
+table form tr td {
+	padding: 10px;
+	border-top: 1px solid #eaeaea;
+}
+table.form tr td.label {
+	width: 25%;
+	padding-right: 0;
+	padding-top: 12px;
+}
+/* Registration */
+div.registration {
+	width: 100%;
+	overflow: hidden;
+}
+div.registration table.form tr td.label {
+	width: 131px;
+}
+div.registration table.form  input.full {
+	width: 98%;
+	padding-left: 1%;
+	padding-right: 1%;
+	border: 1px solid gray;
+	line-height: 19px;
+}
+div.registration table.form select.full {
+	width: 100%
+}
+div.auth td.left-block {
+	font-size: 11px;
+	line-height: 14px;
+}
+div.auth .left-block strong {
+	color: #4b4b4b;
+}
+
+div.autorization .login {
+	width: 98%;
+	border: 1px solid;
+	padding: 4px;
+	color: gray;
+	margin: 10px 1px;
+	font-size: 18px;
+	line-height: 21px;
+}
+div.remember {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eaeaea;
+	margin: 10px 0;
+	position: relative;
+}
+div.remember a {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.error_message {
+	color: red;
+}
+
+/* Header */
+img.logo {
+	float: left;
+	width: 170px;
+	height: 170px;
+	margin: 20px 60px;
+}
+div.welcome {
+	float: right;
+	margin: 20px;
+}
+h1.caption {
+	position: absolute;
+	left: 550px;
+	top: 90px;
+	line-height: 30px;
+	font-size: 30px;
+	color: #8b6149;
+	font-family: Arial, Helvetica, sans-serif;
+}
