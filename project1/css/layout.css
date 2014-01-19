@@ -1,40 +1,27 @@
-html {
-	height: 100%;
-}
 /* Body */
 body {
 	color: #505050;
 	background: #50948a;
-	min-height: 100%;
-	/*position: relative;*/
-	font-size: 12px;
-	line-height: 14px;
-	font-family: Arial sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Container */
 div.container {
-	min-width: 982px;
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
-	/*position: relative;*/
-}
-div.left-block {
-	width: 190px;
-	float: left;
-}
-div.middle-block {
-	width: 520px;
-	float: left;
-}
-div.right-block {
-	width: 250px;
-	float: left;
-}
-div.cblock {
-	/*position: relative;*/
 	background: #fff;
+}
+/* Header */
+div.header {
+	height: 210px;
+}
+/* Center Block */
+div.cblock {
 	border: 1px solid #d0d9dd;
 	clear: left;
+	padding: 16px 20px;
+	overflow: hidden;
 }
 /* Table layout */
 table.layout {
@@ -53,15 +40,17 @@ table.layout tr td.middle-block {
 table.layout tr td {
 	vertical-align: top;
 }
-div.cblock .padding {
-	padding: 16px 20px;
+table.layout td.left-block {
+	font-size: 11px;
+	line-height: 14px;
 }
+table.layout .left-block strong {
+	color: #4b4b4b;
+}
+
+
+
 p.left {
 	position: relative;
 	float: left;
-}
-/* Header */
-div.header {
-	background: #fff;
-	height: 210px;
 }

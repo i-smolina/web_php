@@ -1,7 +1,7 @@
 <?php
 require_once getenv("DOCUMENT_ROOT") . "/models/db.php";
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+require_once getenv("DOCUMENT_ROOT") . "/mysql/error_handler.php";
+require_once getenv("DOCUMENT_ROOT") . "/mysql/config.php";
 
 session_start();
 if (!empty($_REQUEST['action']) && ($_REQUEST['action']) == 'logout') {

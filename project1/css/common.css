@@ -1,48 +1,34 @@
-
-div.form {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-}
-table.form {
-	position: relative;
-	width: 100%;
-}
-table form tr td {
-	padding: 10px;
-	border-top: 1px solid #eaeaea;
-}
-table.form tr td.label {
-	width: 25%;
-	padding-right: 0;
-	padding-top: 12px;
-}
 /* Registration */
 div.registration {
 	width: 100%;
-	overflow: hidden;
 }
-div.registration table.form tr td.label {
+div.registration table.authform tr td.label {
 	width: 131px;
 }
-div.registration table.form  input.full {
+div.registration table.authform  input.full {
 	width: 98%;
 	padding-left: 1%;
 	padding-right: 1%;
 	border: 1px solid gray;
 	line-height: 19px;
 }
-div.registration table.form select.full {
+div.registration table.authform select.full {
 	width: 100%
 }
-div.auth td.left-block {
-	font-size: 11px;
-	line-height: 14px;
-}
-div.auth .left-block strong {
-	color: #4b4b4b;
-}
 
+/* Table for form */
+table.authform {
+	width: 100%;
+}
+table form tr td {
+	padding: 10px;
+	border-top: 1px solid #eaeaea;
+}
+table.authform tr td.label {
+	padding-right: 0;
+	padding-top: 12px;
+}
+/* Autorization */
 div.autorization .login {
 	width: 98%;
 	border: 1px solid;
@@ -52,21 +38,6 @@ div.autorization .login {
 	font-size: 18px;
 	line-height: 21px;
 }
-div.remember {
-	padding-bottom: 20px;
-	border-bottom: 1px solid #eaeaea;
-	margin: 10px 0;
-	position: relative;
-}
-div.remember a {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-.error_message {
-	color: red;
-}
-
 /* Header */
 img.logo {
 	float: left;
@@ -86,4 +57,21 @@ h1.caption {
 	font-size: 30px;
 	color: #8b6149;
 	font-family: Arial, Helvetica, sans-serif;
+}
+div.remember {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eaeaea;
+	margin: 10px 0;
+	position: relative;
+}
+div.remember a {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+div#band {
+	background: url(../img/fen.png) repeat-x;
+}
+.error_message {
+	color: red;
 }

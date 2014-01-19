@@ -1,0 +1,30 @@
+div.subdecor {
+	padding-left: 30px;
+}
+
+div.cblock {
+	display: table;
+}
+div#table_row {
+	display: table-row;
+}
+div.main {
+	display: table-cell;
+	width: 900px;
+}
+div.sidebar {
+	display: table-cell;
+	width: 210px;
+	float: left;
+	margin-right: 30px;
+}
+div.product_item {
+	margin: 10px;
+	width: 175px;
+	height: 175px;
+	float: left;
+}
+div.product_item img {
+	width: 150px;
+	height: 150px;
+}
